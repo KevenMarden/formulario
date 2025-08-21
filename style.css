@@ -1,1 +1,88 @@
 @charset "utf-8";
+
+/* Reset simples para manter tudo padronizado */
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo da página */
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container do formulário */
+form {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Título */
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Campos do formulário */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #6d6c6c;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+/* Efeito ao clicar no campo */
+input:focus, select:focus, textarea:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 6px rgba(79, 172, 254, 0.4);
+}
+
+/* Botão */
+button, input[type="submit"] {
+  margin-bottom:10px ;  
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* Texto menor */
+.small-text {
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+  margin-top: 10px;
+}
